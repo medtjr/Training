@@ -1,13 +1,29 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html><html>
 	<head>
 		<title>Main Page</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="generator" content="Wakanda GUIDesigner"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 		<meta name="WAF.packageJson"/>
-		<meta name="WAF.catalog" content="" />
-	</head>
-	<body id="waf-body" data-type="document" data-lib="WAF" data-rpc-activate="false" data-rpc-namespace="rpc" data-rpc-validation="false" style="">
+		<meta name="WAF.catalog" content="Company,Employee"/>
+		<meta name="wakanda-version" content="8 build 8.162963"/>
+		<meta name="wakanda-build" content="8.162963"/>
+		<meta id="waf-interface-css" name="WAF.config.loadCSS" content="styles/index.css"/>
+		<meta id="waf-project-css" name="WAF.config.loadCSS" content="/application.css"/>
+
+		<meta data-type="dataSource" data-lib="WAF" data-source="Employee" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="employee" content="employee"/>
+		
+		<meta data-type="dataSource" data-lib="WAF" data-source="company.toutEmployee" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="toutEmployee" content="toutEmployee"/>
+		<meta data-type="dataSource" data-lib="WAF" data-source="employee.travaille" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="travaille" content="travaille"/>
+		<meta data-type="dataSource" data-lib="WAF" data-source="Company" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="company" content="company"/></head>
+	<body id="waf-body" data-type="document" data-rpc-validation="false" data-rpc-namespace="rpc" data-rpc-activate="false" data-lib="WAF" data-entire-model="false" data-platform="desktop" data-viewport-width="device-width" data-viewport-initial-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-minimum-scale="1.0" data-apple-meta-tags-status-bar="default" data-workspace-device="desktop" data-workspace-orientation="portrait" data-workspace-width="0" data-workspace-height="0" data-group="[]" data-theme="default" style="bottom:;right:;visibility:hidden;">
+		<div id="dataGrid1" data-type="dataGrid" data-lib="WAF" class="waf-widget waf-dataGrid" data-label="" data-label-position="top" data-selection-mode="single" data-display-error="true" data-footer-text="item(s)" data-column="[{'sourceAttID':'nom','colID':'nom','width':'150','title':'nom'},{'sourceAttID':'adresse','colID':'adresse','width':'150','title':'adresse'}]" data-constraint-left="true" data-constraint-top="true" data-binding="company" data-constraint-bottom="true" data-constraint-right="false"></div>
+		<div id="container1" data-type="container" data-lib="WAF" class="waf-widget waf-container waf-container-level-0 waf-level-0" data-label="" data-label-position="top" data-constraint-left="false" data-constraint-top="true" data-constraint-right="true" data-constraint-bottom="true">
+	 	<input id="textField1" data-type="textField" data-lib="WAF" type="text" class="waf-widget waf-textField" data-label="Vous avez selectionné" data-label-position="left" data-multiline="false" data-readOnly="false" data-password="false" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-binding="company.nom"/>
+ 		<label id="label1" data-type="label" data-lib="WAF" for="textField1" data-valign="middle" data-margin="5" class="waf-widget waf-label waf-label-textfield" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false">Vous avez selectionné</label>
+ 					<div id="dataGrid7" data-type="dataGrid" data-lib="WAF" data-binding="toutEmployee" class="waf-widget waf-dataGrid" data-label="" data-label-position="top" data-selection-mode="single" data-display-error="true" data-footer-text="item(s)" data-column="[{'sourceAttID':'nom','colID':'nom','width':'150','title':'nom'},{'sourceAttID':'prenom','colID':'prenom','width':'150','title':'prenom'},{'sourceAttID':'age','colID':'age','width':'90','title':'age'},{'sourceAttID':'dateNai','colID':'dateNai','width':'100','title':'dateNai'}]" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="true" data-constraint-right="true"></div>
+ 	</div>
+		<div id="dataGrid8" data-type="dataGrid" data-lib="WAF" class="waf-widget waf-dataGrid" data-label="" data-label-position="top" data-selection-mode="single" data-display-error="true" data-footer-text="item(s)" data-column="[{'sourceAttID':'nomComplet','colID':'nomComplet','width':'150','title':'nomComplet'},{'sourceAttID':'age','colID':'age','width':'90','title':'age'},{'sourceAttID':'dateNai','colID':'dateNai','width':'100','title':'dateNai'}]" data-constraint-left="false" data-constraint-top="true" data-constraint-bottom="true" data-constraint-right="true" data-binding="employee"></div>
+		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>
 	</body>
 </html>
