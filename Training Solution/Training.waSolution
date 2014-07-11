@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?><solution>
 	<project path="../Training/Training.waProject"/>
+	<project path="../Inscriptionn/Inscriptionn.waProject"/>
 	<file path="./Settings.waSettings">
 		<tag name="settings"/>
 	</file>
